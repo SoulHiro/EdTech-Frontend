@@ -1,0 +1,16 @@
+@layer reset, base, layout, components, utilities;
+
+@import 'variables.css';
+
+@import 'reset.css' layer(reset);
+@import 'base.css' layer(base);
+@import 'layout.css' layer(layout);
+
+@import '_components/hero.css' layer(components);
+@import '_components/slider.css' layer(components);
+@import '_components/cards.css' layer(components);
+@import '_components/activities.css' layer(components);
+@import '_components/faq.css' layer(components);
+@import '_components/audio-player.css' layer(components);
+
+@import 'utilities.css' layer(utilities);

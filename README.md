@@ -75,20 +75,20 @@ A versão publicada está disponível em:
 ### 💻 Rodar localmente
 
 1. Clone o repositório:
-   ```bash
-   git clone [url-do-repo]
-   ```
+    ```bash
+    git clone [url-do-repo]
+    ```
 2. Abra o arquivo `index.html` diretamente no navegador, ou use uma extensão como **Live Server** (VS Code) para servir localmente:
-   ```
-   Live Server → botão direito em index.html → "Open with Live Server"
-   ```
-   > Necessário servir via HTTP (não `file://`) por conta do uso de ES Modules (`type="module"`).
+    ```
+    Live Server → botão direito em index.html → "Open with Live Server"
+    ```
+    > Necessário servir via HTTP (não `file://`) por conta do uso de ES Modules (`type="module"`).
 
 ## 📱 Responsividade
 
 Será testado em:
 
-- Desktop (1920px, 1440px) ⚙️
+- Desktop (1920px, 1280px) ⚙️
 - Tablet (768px) ⚙️
 - Mobile (375px, 390px) ⚙️
 
