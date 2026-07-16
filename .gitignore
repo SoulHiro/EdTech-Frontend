@@ -1,0 +1,11 @@
+# Sistema Operacional
+.DS_Store       # macOS
+Thumbs.db       # Windows
+desktop.ini     # Windows
+
+# Editor / IDE
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.bak
