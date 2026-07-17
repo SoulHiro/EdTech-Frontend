@@ -19,10 +19,10 @@ Acesse diretamente a versão publicada no link acima.
 ```bash
 git clone https://github.com/soulhiro/EdTech-Frontend.git
 cd EdTech-Frontend
-pnpm install
+npm install   # ou pnpm install / yarn
 ```
 
-> Sem o `pnpm install`, Plyr e Swiper não estarão disponíveis e o vídeo e o slider não funcionarão.
+> Sem instalar as dependências, Plyr e Swiper não estarão disponíveis e o vídeo e o slider não funcionarão.
 
 Abra o `index.html` via servidor HTTP local — o projeto usa ES Modules (`type="module"`), que o browser bloqueia via `file://`.
 
