@@ -72,7 +72,7 @@ edtech-frontend/
 │   ├── layout.css                       # main, container, seções
 │   ├── utilities.css                    # .sr-only, .skip-link, .animate-on-scroll
 │   ├── responsive.css                   # Media queries (1024 / 768 / 480px)
-│   └── _components/
+│   └── components/
 │       ├── button.css
 │       ├── hero.css
 │       ├── video-player.css
@@ -89,7 +89,7 @@ edtech-frontend/
 │   ├── main.js                          # DOMContentLoaded — inicializa todos os módulos
 │   ├── player.js                        # Plyr.js (vídeo)
 │   ├── slider.js                        # Swiper.js
-│   └── _components/
+│   └── components/
 │       ├── audio-player.js              # Player de áudio nativo
 │       ├── flip-cards.js                # Geração dinâmica e flip com inert
 │       ├── discursive-activity.js       # Atividade discursiva + sessionStorage

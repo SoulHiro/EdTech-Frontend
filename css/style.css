@@ -6,18 +6,18 @@
 @import 'base.css' layer(base);
 @import 'layout.css' layer(layout);
 
-@import '_components/button.css' layer(components);
-@import '_components/hero.css' layer(components);
-@import '_components/slider.css' layer(components);
-@import '_components/cards.css' layer(components);
-@import '_components/discursive-activity.css' layer(components);
-@import '_components/objective-activity.css' layer(components);
-@import '_components/faq.css' layer(components);
-@import '_components/audio-player.css' layer(components);
-@import '_components/video-player.css' layer(components);
-@import '_components/lateral-image.css' layer(components);
-@import '_components/featured.css' layer(components);
-@import '_components/footer.css' layer(components);
+@import 'components/button.css' layer(components);
+@import 'components/hero.css' layer(components);
+@import 'components/slider.css' layer(components);
+@import 'components/cards.css' layer(components);
+@import 'components/discursive-activity.css' layer(components);
+@import 'components/objective-activity.css' layer(components);
+@import 'components/faq.css' layer(components);
+@import 'components/audio-player.css' layer(components);
+@import 'components/video-player.css' layer(components);
+@import 'components/lateral-image.css' layer(components);
+@import 'components/featured.css' layer(components);
+@import 'components/footer.css' layer(components);
 
 @import 'utilities.css' layer(utilities);
 
