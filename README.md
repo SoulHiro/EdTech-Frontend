@@ -9,7 +9,7 @@ Página interativa desenvolvida como teste técnico, implementando fielmente o l
 ## 🛠 Tecnologias
 
 - HTML5 semântico
-- CSS3 (Custom Properties, Flexbox/Grid, mobile-first)
+- CSS3 (Custom Properties, Flexbox/Grid, desktop-first)
 - JavaScript Vanilla (ES Modules)
 - Swiper.js
 - sessionStorage (persistência de estado)
