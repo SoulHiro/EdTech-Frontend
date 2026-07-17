@@ -19,17 +19,14 @@ Acesse diretamente a versão publicada no link acima.
 ```bash
 git clone https://github.com/soulhiro/EdTech-Frontend.git
 cd EdTech-Frontend
+pnpm install
 ```
 
-Abra o `index.html` com um servidor HTTP local. O projeto usa ES Modules (`type="module"`), que o browser bloqueia via `file://`.
+> Sem o `pnpm install`, Plyr e Swiper não estarão disponíveis e o vídeo e o slider não funcionarão.
 
-**Opção 1 — VS Code Live Server:**
-Botão direito em `index.html` → "Open with Live Server"
+Abra o `index.html` via servidor HTTP local — o projeto usa ES Modules (`type="module"`), que o browser bloqueia via `file://`.
 
-**Opção 2 — Python:**
-```bash
-python3 -m http.server 3000
-```
+**VS Code Live Server:** botão direito em `index.html` → "Open with Live Server"
 
 ---
 
