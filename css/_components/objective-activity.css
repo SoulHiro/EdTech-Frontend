@@ -45,8 +45,6 @@
     line-height: var(--line-height-base);
 }
 
-/* --- opções --- */
-
 .objective-activity__options {
     display: flex;
     flex-direction: column;
@@ -114,15 +112,11 @@
     color: var(--primary-foreground);
 }
 
-/* --- actions --- */
-
 .objective-activity__actions {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
 }
-
-/* --- feedback banner --- */
 
 .objective-activity__feedback {
     display: flex;

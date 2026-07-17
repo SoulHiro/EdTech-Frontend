@@ -20,3 +20,5 @@
 @import '_components/footer.css' layer(components);
 
 @import 'utilities.css' layer(utilities);
+
+@import 'responsive.css';

@@ -5,12 +5,12 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: var(--spacing-lg);
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding-block: var(--spacing-xl);
+    padding-inline: max(var(--spacing-lg), calc((100% - var(--container-max-width)) / 2));
     background-color: var(--primary);
     overflow: hidden;
+    max-width: none;
 }
-
-/* --- camadas de background decorativo --- */
 
 .hero__bg-grid {
     position: absolute;
@@ -117,8 +117,6 @@
     pointer-events: none;
 }
 
-/* --- conteúdo acima do background --- */
-
 .hero__content,
 .hero__image {
     position: relative;
@@ -130,8 +128,6 @@
     align-items: center;
     justify-content: flex-end;
 }
-
-/* --- card glassmorphism --- */
 
 .hero__card {
     width: 100%;

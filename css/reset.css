@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Aqui evitamos que imagens e videos acabem estourando o container */
 img,
 video,
 iframe {
@@ -14,19 +13,16 @@ iframe {
     display: block;
 }
 
-/* Reset de estilo */
 ul,
 ol {
     list-style: none;
 }
 
-/* Remove sublinhado e herda cor do texto em links */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Botões e inputs herdam a fonte da página */
 button,
 input,
 textarea,
@@ -35,14 +31,12 @@ select {
     color: inherit;
 }
 
-/* Remove aparência padrão do botão nativo do browser */
 button {
     background: none;
     border: none;
     cursor: pointer;
 }
 
-/* Melhora a legibilidade de textos */
 html {
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;

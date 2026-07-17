@@ -12,6 +12,9 @@ main {
 }
 
 main > section {
-    padding-inline: calc(var(--spacing-xl) * 2);
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    width: 100%;
+    padding-inline: var(--spacing-xl);
 }
 

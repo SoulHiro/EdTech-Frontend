@@ -1,0 +1,154 @@
+@media (max-width: 1024px) {
+    :root {
+        --font-size-2xl: 3rem;
+        --font-size-xl: 2.25rem;
+        --font-size-lg: 2rem;
+    }
+
+    main {
+        gap: 48px;
+    }
+
+    main > section {
+        padding-inline: var(--spacing-lg);
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: var(--spacing-xl) var(--spacing-lg);
+        text-align: center;
+    }
+
+    .hero__content {
+        align-items: center;
+    }
+
+    .hero__content::before {
+        display: none;
+    }
+
+    .hero__image {
+        display: none;
+    }
+
+    .flip-cards__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__container {
+        padding: 32px var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-2xl: 2.5rem;
+        --font-size-xl: 2rem;
+        --font-size-lg: 1.75rem;
+        --btn-height-lg: 48px;
+        --btn-padding-x: 1.25rem;
+    }
+
+    main {
+        gap: var(--spacing-lg);
+    }
+
+    main > section {
+        padding-inline: var(--spacing-md);
+    }
+
+    .hero {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .hero__title {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+    }
+
+    .hero__description {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .hero__action {
+        justify-content: center;
+    }
+
+    .lateral-image__card {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .lateral-image__text {
+        max-width: 100%;
+    }
+
+    .flip-cards__container {
+        grid-template-columns: 1fr;
+    }
+
+    .podcast__player {
+        flex-wrap: wrap;
+    }
+
+    .podcast__volume {
+        display: none;
+    }
+
+    .podcast__settings-btn {
+        margin-left: auto;
+    }
+
+    .podcast__seekbar {
+        order: 1;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .discursive-activity__header {
+        flex-direction: column;
+    }
+
+    .objective-activity__header {
+        flex-direction: column;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .faq {
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-2xl: 2rem;
+        --font-size-xl: 1.75rem;
+        --font-size-lg: 1.5rem;
+        --btn-height: 40px;
+        --btn-padding-x: 1rem;
+    }
+
+    .slider__nav {
+        gap: var(--spacing-sm);
+    }
+
+    .objective-activity__option-text {
+        font-size: 0.875rem;
+    }
+
+    .faq__summary {
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    .faq__body {
+        padding: 12px 16px 16px;
+    }
+}
