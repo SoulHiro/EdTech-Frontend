@@ -37,6 +37,7 @@ function attachListeners(container) {
         card.querySelectorAll('.btn').forEach((btn) => {
             btn.addEventListener('click', () => {
                 const isFlipped = inner.classList.toggle('is-flipped');
+                card.classList.toggle('is-flipped', isFlipped);
                 front.toggleAttribute('inert', isFlipped);
                 back.toggleAttribute('inert', !isFlipped);
             });

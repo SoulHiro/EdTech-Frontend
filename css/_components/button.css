@@ -10,7 +10,11 @@
     border: none;
     cursor: pointer;
     gap: var(--btn-gap);
-    transition: opacity var(--transition-fast);
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn:not(:disabled):active {
+    transform: scale(0.97);
 }
 
 .btn--lg {

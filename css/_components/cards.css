@@ -10,6 +10,18 @@
     height: 320px;
     perspective: 1000px;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 0;
+}
+
+.flip-cards__card:hover {
+    transform: scale(1.02);
+}
+
+.flip-cards__card.is-flipped {
+    transform: scale(1.06);
+    box-shadow: var(--shadow-lg);
+    z-index: 1;
 }
 
 .flip-cards__inner {

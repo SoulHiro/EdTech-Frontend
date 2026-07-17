@@ -88,6 +88,7 @@
     gap: var(--spacing-md);
     padding: 17px;
     border-radius: var(--radius-sm);
+    animation: feedback-in 0.25s ease forwards;
 }
 
 .discursive-activity__feedback[hidden] {
