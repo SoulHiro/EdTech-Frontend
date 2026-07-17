@@ -1,3 +1,5 @@
+const STORAGE_KEY = 'discursiveActivity';
+
 export function initDiscursiveActivity() {
     const activity = document.querySelector('.js-discursive-activity');
     if (!activity) return;
@@ -7,9 +9,7 @@ export function initDiscursiveActivity() {
     const alterBtn = activity.querySelector('.js-activity-alter');
     const feedback = activity.querySelector('.js-activity-feedback');
 
-    const saved = JSON.parse(
-        localStorage.getItem('discursiveActivity') || 'null'
-    );
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
     if (saved?.hasResponse) {
         textarea.value = saved.text;
         applyState(true);
@@ -23,7 +23,7 @@ export function initDiscursiveActivity() {
 
     submitBtn.addEventListener('click', () => {
         localStorage.setItem(
-            'discursiveActivity',
+            STORAGE_KEY,
             JSON.stringify({
                 hasResponse: true,
                 text: textarea.value,
@@ -34,7 +34,7 @@ export function initDiscursiveActivity() {
 
     alterBtn.addEventListener('click', () => {
         localStorage.setItem(
-            'discursiveActivity',
+            STORAGE_KEY,
             JSON.stringify({
                 hasResponse: false,
                 text: textarea.value,

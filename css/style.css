@@ -11,6 +11,7 @@
 @import '_components/slider.css' layer(components);
 @import '_components/cards.css' layer(components);
 @import '_components/discursive-activity.css' layer(components);
+@import '_components/objective-activity.css' layer(components);
 @import '_components/faq.css' layer(components);
 @import '_components/audio-player.css' layer(components);
 @import '_components/video-player.css' layer(components);

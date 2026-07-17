@@ -469,6 +469,131 @@
                     </div>
                 </div>
             </section>
+            <section class="objective-activity">
+                <h2 class="sr-only">Atividade objetiva</h2>
+                <div class="objective-activity__card js-objective-activity">
+                    <div class="objective-activity__header">
+                        <div class="objective-activity__icon-wrap" aria-hidden="true">
+                            <img
+                                src="assets/icons/objective-activity-icon.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="objective-activity__meta">
+                            <h3 class="objective-activity__title">
+                                Atividade Objetiva
+                            </h3>
+                            <p class="objective-activity__description">
+                                It is a long established fact that a reader will
+                                be distracted by the readable content of a page.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="objective-activity__options" role="group" aria-labelledby="objective-activity-label">
+                        <p id="objective-activity-label" class="sr-only">Escolha uma alternativa</p>
+
+                        <label class="objective-activity__option js-objective-option" data-id="a">
+                            <input type="radio" name="objective" value="a" class="sr-only" />
+                            <span class="objective-activity__option-check" aria-hidden="true">
+                                <svg class="objective-activity__check-icon" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                    <path d="M1 4L4 7L10 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="objective-activity__option-text">A) Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        </label>
+
+                        <label class="objective-activity__option js-objective-option" data-id="b">
+                            <input type="radio" name="objective" value="b" class="sr-only" />
+                            <span class="objective-activity__option-check" aria-hidden="true">
+                                <svg class="objective-activity__check-icon" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                    <path d="M1 4L4 7L10 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="objective-activity__option-text">B) Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+                        </label>
+
+                        <label class="objective-activity__option js-objective-option" data-id="c">
+                            <input type="radio" name="objective" value="c" class="sr-only" />
+                            <span class="objective-activity__option-check" aria-hidden="true">
+                                <svg class="objective-activity__check-icon" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                    <path d="M1 4L4 7L10 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="objective-activity__option-text">C) Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        </label>
+
+                        <label class="objective-activity__option js-objective-option" data-id="d">
+                            <input type="radio" name="objective" value="d" class="sr-only" />
+                            <span class="objective-activity__option-check" aria-hidden="true">
+                                <svg class="objective-activity__check-icon" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                    <path d="M1 4L4 7L10 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="objective-activity__option-text">D) Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        </label>
+                    </div>
+
+                    <div class="objective-activity__actions">
+                        <button class="btn btn--md js-objective-submit" disabled>
+                            Responder
+                        </button>
+                        <button class="btn btn--primary btn--md js-objective-alter" disabled>
+                            Alterar
+                        </button>
+                    </div>
+
+                    <div
+                        class="objective-activity__feedback objective-activity__feedback--success js-objective-feedback-success"
+                        role="status"
+                        hidden
+                    >
+                        <div class="objective-activity__feedback-body">
+                            <h4 class="objective-activity__feedback-title">É isso aí!</h4>
+                            <p class="objective-activity__feedback-text">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Pariatur commodi odio maiores
+                                accusamus aspernatur consequatur ipsam
+                                dignissimos magnam hic, velit est perferendis
+                                explicabo aperiam ratione veritatis labore.
+                            </p>
+                        </div>
+                        <button
+                            class="objective-activity__feedback-close js-objective-feedback-close"
+                            aria-label="Fechar"
+                        >
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                                <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div
+                        class="objective-activity__feedback objective-activity__feedback--error js-objective-feedback-error"
+                        role="status"
+                        hidden
+                    >
+                        <div class="objective-activity__feedback-body">
+                            <h4 class="objective-activity__feedback-title">Tente novamente!</h4>
+                            <p class="objective-activity__feedback-text">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Pariatur commodi odio maiores
+                                accusamus aspernatur consequatur ipsam
+                                dignissimos magnam hic, velit est perferendis
+                                explicabo aperiam ratione veritatis labore.
+                            </p>
+                        </div>
+                        <button
+                            class="objective-activity__feedback-close js-objective-feedback-close"
+                            aria-label="Fechar"
+                        >
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                                <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__container">
