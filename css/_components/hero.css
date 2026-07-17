@@ -1,0 +1,287 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+    background-color: var(--primary);
+    overflow: hidden;
+}
+
+/* --- camadas de background decorativo --- */
+
+.hero__bg-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.07;
+    background-image:
+        linear-gradient(90deg, rgb(34, 34, 34) 2.5%, rgba(34, 34, 34, 0) 2.5%),
+        linear-gradient(180deg, rgb(34, 34, 34) 2.5%, rgba(34, 34, 34, 0) 2.5%);
+    pointer-events: none;
+}
+
+.hero__bg-glow-left {
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 600px;
+    border-radius: var(--radius-full);
+    background: rgba(118, 185, 0, 0.1);
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+.hero__bg-glow-right {
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 800px;
+    height: 800px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(
+        135deg,
+        rgba(118, 185, 0, 0.05) 0%,
+        rgba(118, 185, 0, 0) 100%
+    );
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+.hero__bg-waves {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.hero__bg-waves img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__bg-circle {
+    position: absolute;
+    top: 121px;
+    right: 64px;
+    width: 128px;
+    height: 128px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(118, 185, 0, 0.2);
+    pointer-events: none;
+}
+
+.hero__bg-circle::before,
+.hero__bg-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 126px;
+    height: 126px;
+    margin-top: -63px;
+    margin-left: -63px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(118, 185, 0, 0.1);
+}
+
+.hero__bg-circle::before {
+    transform: rotate(45deg);
+}
+
+.hero__bg-circle::after {
+    transform: rotate(-45deg);
+}
+
+.hero__bg-dot {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* --- conteúdo acima do background --- */
+
+.hero__content,
+.hero__image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* --- card glassmorphism --- */
+
+.hero__card {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: 17px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.36);
+}
+
+.hero__card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.hero__card-dots {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.hero__card-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+}
+
+.hero__card-dot--red    { background: rgba(239, 68, 68, 0.8); }
+.hero__card-dot--yellow { background: rgba(234, 179, 8, 0.8); }
+.hero__card-dot--green  { background: rgba(34, 197, 94, 0.8); }
+
+.hero__card-pill {
+    width: 80px;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero__card-body {
+    display: flex;
+    gap: var(--spacing-md);
+    flex: 1;
+    min-height: 0;
+}
+
+.hero__card-sidebar {
+    width: 105px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+}
+
+.hero__card-line {
+    height: 8px;
+    width: 100%;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero__card-line--short {
+    width: 59px;
+}
+
+.hero__card-accent {
+    margin-top: auto;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    background: rgba(118, 185, 0, 0.2);
+    border: 1px solid rgba(118, 185, 0, 0.3);
+}
+
+.hero__card-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    min-width: 0;
+}
+
+.hero__card-chart {
+    height: 85px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(166deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    overflow: hidden;
+}
+
+.hero__card-chart img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__card-panels {
+    flex: 1;
+    display: flex;
+    gap: var(--spacing-md);
+    min-height: 0;
+}
+
+.hero__card-panel {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.hero__content::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 8px;
+    width: 4px;
+    height: 96px;
+    background: linear-gradient(to bottom, #76b900, rgba(118, 185, 0, 0));
+}
+
+.hero__title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-foreground);
+    word-break: break-word;
+}
+
+.hero__title span {
+    color: var(--accent);
+}
+
+.hero__description {
+    color: var(--foreground-hero-description);
+    font-size: var(--font-size-sm);
+    word-break: break-word;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 24px;
+}

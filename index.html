@@ -10,18 +10,88 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
+        <script type="module" src="js/main.js"></script>
         <title>EdTech Frontend - Victor M. Santos</title>
     </head>
     <body>
-        <div
-            style="
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            "
-        >
-            <h1>Hello World!</h1>
-        </div>
+        <section class="hero">
+            <!-- background -->
+            <div class="hero__bg-grid" aria-hidden="true"></div>
+            <div class="hero__bg-glow-left" aria-hidden="true"></div>
+            <div class="hero__bg-glow-right" aria-hidden="true"></div>
+            <div class="hero__bg-waves" aria-hidden="true">
+                <img src="assets/images/hero-waves.svg" alt="" />
+            </div>
+            <div class="hero__bg-circle" aria-hidden="true"></div>
+            <div class="hero__bg-dot" aria-hidden="true"></div>
+
+            <!-- conteúdo -->
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Lorem ipsum <br />
+                    dolor, sit <span>amet</span>
+                </h1>
+                <p class="hero__description">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                </p>
+                <div class="hero__action" id="hero-action">
+                    <button
+                        class="btn btn--accent btn--lg"
+                        onclick="console.log('Button clicked!! 👀')"
+                    >
+                        Lorem ipsum
+                        <img
+                            src="assets/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
+                </div>
+            </div>
+
+            <!-- card glassmorphism -->
+            <div class="hero__image">
+                <div class="hero__card">
+                    <div class="hero__card-header">
+                        <div class="hero__card-dots">
+                            <span
+                                class="hero__card-dot hero__card-dot--red"
+                            ></span>
+                            <span
+                                class="hero__card-dot hero__card-dot--yellow"
+                            ></span>
+                            <span
+                                class="hero__card-dot hero__card-dot--green"
+                            ></span>
+                        </div>
+                        <div class="hero__card-pill"></div>
+                    </div>
+                    <div class="hero__card-body">
+                        <div class="hero__card-sidebar">
+                            <div class="hero__card-line"></div>
+                            <div
+                                class="hero__card-line hero__card-line--short"
+                            ></div>
+                            <div class="hero__card-accent"></div>
+                        </div>
+                        <div class="hero__card-main">
+                            <div class="hero__card-chart">
+                                <img
+                                    src="assets/images/hero-chart.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div class="hero__card-panels">
+                                <div class="hero__card-panel"></div>
+                                <div class="hero__card-panel"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
