@@ -16,5 +16,6 @@
 @import '_components/video-player.css' layer(components);
 @import '_components/lateral-image.css' layer(components);
 @import '_components/featured.css' layer(components);
+@import '_components/footer.css' layer(components);
 
 @import 'utilities.css' layer(utilities);

@@ -15,6 +15,3 @@ main > section {
     padding-inline: calc(var(--spacing-xl) * 2);
 }
 
-footer {
-    padding: var(--spacing-xl);
-}

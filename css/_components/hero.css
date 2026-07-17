@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: var(--spacing-lg);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-xl) var(--spacing-lg);
     background-color: var(--primary);
     overflow: hidden;
 }
