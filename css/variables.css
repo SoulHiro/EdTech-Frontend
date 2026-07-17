@@ -32,14 +32,34 @@
     --input: #e5e7eb;
     --ring: #76b900;
 
+    /* Disabled */
+    --disabled: #f3f4f6;
+    --disabled-foreground: #9ca3af;
+
+    /* Warning / Alert */
+    --warning: #fff9c4;
+    --warning-foreground: #713f12;
+
+    /* Footer */
+    --footer-background: #0c0a08;
+    --footer-foreground: #64748b;
+
+    /* Foreground variants */
+    --foreground-heading: #171d0c;
+    --foreground-body: #5c6b48;
+    --foreground-hero-description: #9ca3af;
+    --foreground-card-dark: #d1d5db;
+    --placeholder: #94a3b8;
+
     /* Typography */
     --font-family-base: 'Inter', sans-serif;
 
-    --font-size-sm: 0.875rem;
-    --font-size-base: 1rem;
-    --font-size-lg: 1.25rem;
-    --font-size-xl: 2rem;
-    --font-size-2xl: 2.5rem;
+    --font-size-xs: 0.875rem; /* 14px */
+    --font-size-sm: 1rem; /* 16px */
+    --font-size-base: 1.125rem; /* 18px */
+    --font-size-lg: 2.25rem; /* 36px */
+    --font-size-xl: 3rem; /* 48px */
+    --font-size-2xl: 4.5rem; /* 72px */
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -55,6 +75,12 @@
     --spacing-lg: 2rem; /* 32px */
     --spacing-xl: 4rem; /* 64px */
 
+    /* Button sizes */
+    --btn-height: 44px;
+    --btn-height-lg: 56px;
+    --btn-padding-x: 2rem; /* 32px */
+    --btn-gap: 0.5rem; /* 8px — gap entre texto e ícone */
+
     /* Radius */
     --radius-sm: 4px;
     --radius-md: 8px;
@@ -65,6 +91,7 @@
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-accent: 0 0 20px rgba(118, 185, 0, 0.3);
 
     /* Transition */
     --transition-fast: 0.15s ease;
@@ -72,9 +99,9 @@
     --transition-slow: 0.5s ease;
 
     /* Breakpoints Utilizados */
-    /* mobile: 0 até 767px (estilo base, sem media query) */
-    /* tablet: 768px+ */
-    /* desktop: 1280px+ */
+    /* desktop: 1280px+ (estilo base, sem media query) */
+    /* tablet: max-width: 1279px */
+    /* mobile: max-width: 767px */
 
     /* Container */
     --container-max-width: 1200px;
