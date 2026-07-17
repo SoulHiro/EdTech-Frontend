@@ -6,6 +6,9 @@ desktop.ini     # Windows
 # Editor / IDE
 .vscode/
 
+# Dependências
+node_modules/
+
 # Arquivos temporários
 *.tmp
 *.bak

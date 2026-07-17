@@ -10,88 +10,122 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css"
+        />
+        <script type="importmap">
+            {
+                "imports": {
+                    "plyr": "https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.mjs"
+                }
+            }
+        </script>
         <script type="module" src="js/main.js"></script>
         <title>EdTech Frontend - Victor M. Santos</title>
     </head>
     <body>
-        <section class="hero">
-            <!-- background -->
-            <div class="hero__bg-grid" aria-hidden="true"></div>
-            <div class="hero__bg-glow-left" aria-hidden="true"></div>
-            <div class="hero__bg-glow-right" aria-hidden="true"></div>
-            <div class="hero__bg-waves" aria-hidden="true">
-                <img src="assets/images/hero-waves.svg" alt="" />
-            </div>
-            <div class="hero__bg-circle" aria-hidden="true"></div>
-            <div class="hero__bg-dot" aria-hidden="true"></div>
-
-            <!-- conteúdo -->
-            <div class="hero__content">
-                <h1 class="hero__title">
-                    Lorem ipsum <br />
-                    dolor, sit <span>amet</span>
-                </h1>
-                <p class="hero__description">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                </p>
-                <div class="hero__action" id="hero-action">
-                    <button
-                        class="btn btn--accent btn--lg"
-                        onclick="console.log('Button clicked!! 👀')"
-                    >
-                        Lorem ipsum
-                        <img
-                            src="assets/icons/arrow-right.svg"
-                            alt=""
-                            aria-hidden="true"
-                        />
-                    </button>
+        <main>
+            <section class="hero">
+                <!-- background -->
+                <div class="hero__bg-grid" aria-hidden="true"></div>
+                <div class="hero__bg-glow-left" aria-hidden="true"></div>
+                <div class="hero__bg-glow-right" aria-hidden="true"></div>
+                <div class="hero__bg-waves" aria-hidden="true">
+                    <img src="assets/images/hero-waves.svg" alt="" />
                 </div>
-            </div>
+                <div class="hero__bg-circle" aria-hidden="true"></div>
+                <div class="hero__bg-dot" aria-hidden="true"></div>
 
-            <!-- card glassmorphism -->
-            <div class="hero__image">
-                <div class="hero__card">
-                    <div class="hero__card-header">
-                        <div class="hero__card-dots">
-                            <span
-                                class="hero__card-dot hero__card-dot--red"
-                            ></span>
-                            <span
-                                class="hero__card-dot hero__card-dot--yellow"
-                            ></span>
-                            <span
-                                class="hero__card-dot hero__card-dot--green"
-                            ></span>
-                        </div>
-                        <div class="hero__card-pill"></div>
-                    </div>
-                    <div class="hero__card-body">
-                        <div class="hero__card-sidebar">
-                            <div class="hero__card-line"></div>
-                            <div
-                                class="hero__card-line hero__card-line--short"
-                            ></div>
-                            <div class="hero__card-accent"></div>
-                        </div>
-                        <div class="hero__card-main">
-                            <div class="hero__card-chart">
-                                <img
-                                    src="assets/images/hero-chart.svg"
-                                    alt=""
-                                    aria-hidden="true"
-                                />
-                            </div>
-                            <div class="hero__card-panels">
-                                <div class="hero__card-panel"></div>
-                                <div class="hero__card-panel"></div>
-                            </div>
-                        </div>
+                <!-- conteúdo -->
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Lorem ipsum <br />
+                        dolor, sit <span>amet</span>
+                    </h1>
+                    <p class="hero__description">
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                    </p>
+                    <div class="hero__action" id="hero-action">
+                        <button
+                            class="btn btn--accent btn--lg"
+                            onclick="console.log('Button clicked!! 👀')"
+                        >
+                            Lorem ipsum
+                            <img
+                                src="assets/icons/arrow-right.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                        </button>
                     </div>
                 </div>
-            </div>
-        </section>
+
+                <!-- card glassmorphism -->
+                <div class="hero__image">
+                    <div class="hero__card">
+                        <div class="hero__card-header">
+                            <div class="hero__card-dots">
+                                <span
+                                    class="hero__card-dot hero__card-dot--red"
+                                ></span>
+                                <span
+                                    class="hero__card-dot hero__card-dot--yellow"
+                                ></span>
+                                <span
+                                    class="hero__card-dot hero__card-dot--green"
+                                ></span>
+                            </div>
+                            <div class="hero__card-pill"></div>
+                        </div>
+                        <div class="hero__card-body">
+                            <div class="hero__card-sidebar">
+                                <div class="hero__card-line"></div>
+                                <div
+                                    class="hero__card-line hero__card-line--short"
+                                ></div>
+                                <div class="hero__card-accent"></div>
+                            </div>
+                            <div class="hero__card-main">
+                                <div class="hero__card-chart">
+                                    <img
+                                        src="assets/images/hero-chart.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                </div>
+                                <div class="hero__card-panels">
+                                    <div class="hero__card-panel"></div>
+                                    <div class="hero__card-panel"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video">
+                <div class="video__content">
+                    <h2>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                    </h2>
+                    <p>
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                    </p>
+                </div>
+                <div class="video__player">
+                    <div class="plyr__video-embed">
+                        <iframe
+                            src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                            allowfullscreen
+                            allow="autoplay"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

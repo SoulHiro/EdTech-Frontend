@@ -5,8 +5,10 @@
     padding-inline: var(--container-padding);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-xl);
+main > section {
+    padding: calc(var(--spacing-xl) * 2);
+}
+
+footer {
+    padding: var(--spacing-xl);
 }
