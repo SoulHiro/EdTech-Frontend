@@ -31,7 +31,8 @@
         <title>EdTech Frontend - Victor M. Santos</title>
     </head>
     <body>
-        <main>
+        <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+        <main id="main-content">
             <section class="hero">
                 <!-- background -->
                 <div class="hero__bg-grid" aria-hidden="true"></div>
@@ -70,7 +71,7 @@
                 </div>
 
                 <!-- card glassmorphism -->
-                <div class="hero__image">
+                <div class="hero__image" aria-hidden>
                     <div class="hero__card">
                         <div class="hero__card-header">
                             <div class="hero__card-dots">
@@ -125,6 +126,7 @@
                 <div class="video__player">
                     <div class="plyr__video-embed">
                         <iframe
+                            title="Vídeo de apresentação"
                             src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
                             allowfullscreen
                             allow="autoplay"
@@ -133,6 +135,7 @@
                 </div>
             </section>
             <section class="lateral-image">
+                <h2 class="sr-only">Seção de imagem lateral</h2>
                 <div class="lateral-image__card">
                     <img
                         class="lateral-image__image"
@@ -158,6 +161,7 @@
                 </div>
             </section>
             <section class="slider">
+                <h2 class="sr-only">Galeria de imagens</h2>
                 <div class="slider__card">
                 <div class="swiper js-slider">
                     <div class="swiper-wrapper">
