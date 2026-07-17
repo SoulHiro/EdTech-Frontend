@@ -5,7 +5,9 @@
 
     /* Card */
     --card: #ffffff;
+    --card-dark: #1a1a1a;
     --card-foreground: #0c0a08;
+    --card-foreground-dark: #ffffff;
 
     /* Primary */
     --primary: #0c0a08;

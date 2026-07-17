@@ -1,0 +1,13 @@
+.featured {
+    padding-inline: calc(var(--spacing-xl) * 4);
+}
+.featured__card {
+    background-color: var(--card-dark);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+}
+.featured__card p {
+    color: var(--card-foreground-dark);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+}
