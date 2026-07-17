@@ -23,8 +23,13 @@
 }
 
 .btn--secondary {
-    background-color: var(--secondary);
+    background-color: var(--card);
     color: var(--secondary-foreground);
+    border: 1px solid var(--border);
+}
+
+.btn--md {
+    height: var(--btn-height);
 }
 
 .btn--accent {
