@@ -9,7 +9,7 @@ export function initDiscursiveActivity() {
     const alterBtn = activity.querySelector('.js-activity-alter');
     const feedback = activity.querySelector('.js-activity-feedback');
 
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || 'null');
     if (saved?.hasResponse) {
         textarea.value = saved.text;
         applyState(true);
@@ -22,7 +22,7 @@ export function initDiscursiveActivity() {
     });
 
     submitBtn.addEventListener('click', () => {
-        localStorage.setItem(
+        sessionStorage.setItem(
             STORAGE_KEY,
             JSON.stringify({
                 hasResponse: true,
@@ -33,7 +33,7 @@ export function initDiscursiveActivity() {
     });
 
     alterBtn.addEventListener('click', () => {
-        localStorage.setItem(
+        sessionStorage.setItem(
             STORAGE_KEY,
             JSON.stringify({
                 hasResponse: false,

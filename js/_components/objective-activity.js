@@ -36,7 +36,7 @@ export function initObjectiveActivity() {
         feedbackError.hidden = !(hasResponse && !isCorrect);
     }
 
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || 'null');
     if (saved?.hasResponse) {
         applyState(true, saved.selectedId);
     }
@@ -56,7 +56,7 @@ export function initObjectiveActivity() {
         if (!selected) return;
 
         const selectedId = selected.dataset.id;
-        localStorage.setItem(
+        sessionStorage.setItem(
             STORAGE_KEY,
             JSON.stringify({
                 hasResponse: true,
@@ -67,8 +67,8 @@ export function initObjectiveActivity() {
     });
 
     alterBtn.addEventListener('click', () => {
-        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-        localStorage.setItem(
+        const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || 'null');
+        sessionStorage.setItem(
             STORAGE_KEY,
             JSON.stringify({
                 hasResponse: false,
