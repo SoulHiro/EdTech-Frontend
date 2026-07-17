@@ -78,9 +78,24 @@
     color: #ffffff;
 }
 
+@keyframes faq-open {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes faq-close {
+    from { opacity: 1; transform: translateY(0); }
+    to   { opacity: 0; transform: translateY(-6px); }
+}
+
 .faq__body {
     padding: 17px 24px 24px;
     border-top: 1px solid rgba(229, 231, 235, 0.5);
+    animation: faq-open 0.22s ease forwards;
+}
+
+.faq__item.is-closing .faq__body {
+    animation: faq-close 0.22s ease forwards;
 }
 
 .faq__body p {

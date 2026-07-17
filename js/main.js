@@ -5,6 +5,7 @@ import { initAudioPlayer } from './_components/audio-player.js';
 import { initDiscursiveActivity } from './_components/discursive-activity.js';
 import { initObjectiveActivity } from './_components/objective-activity.js';
 import { initFaq } from './_components/faq.js';
+import { initScrollAnimations } from './_components/scroll-animations.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initPlayer();
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initDiscursiveActivity();
     initObjectiveActivity();
     initFaq();
+    initScrollAnimations();
 });
