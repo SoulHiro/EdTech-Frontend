@@ -64,6 +64,11 @@
     transition: background var(--transition-fast), border-color var(--transition-fast);
 }
 
+.objective-activity__option:not(.is-locked):not(.is-selected):hover {
+    background: var(--secondary);
+    border-color: var(--foreground);
+}
+
 .objective-activity__option.is-selected {
     background: var(--primary);
     border-color: transparent;

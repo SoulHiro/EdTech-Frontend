@@ -137,4 +137,14 @@
     color: var(--foreground);
     padding: 0;
     flex-shrink: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.podcast__play-btn {
+    transition: opacity var(--transition-fast);
+}
+
+.podcast__play-btn:hover,
+.podcast__settings-btn:hover {
+    opacity: 0.6;
 }

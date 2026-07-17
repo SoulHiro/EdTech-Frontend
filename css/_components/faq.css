@@ -37,6 +37,10 @@
     overflow: hidden;
 }
 
+.faq__item:not([open]):hover {
+    background: #ececec;
+}
+
 .faq__item[open] {
     background: var(--accent);
 }

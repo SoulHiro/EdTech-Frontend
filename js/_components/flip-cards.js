@@ -20,7 +20,7 @@ function createCard({ text }) {
                     </div>
                     <button class="btn btn--secondary btn--md">Abrir</button>
                 </div>
-                <div class="flip-cards__back">
+                <div class="flip-cards__back" inert>
                     <p>${text}</p>
                     <button class="btn btn--secondary btn--md">Fechar</button>
                 </div>
@@ -32,9 +32,13 @@ function createCard({ text }) {
 function attachListeners(container) {
     container.querySelectorAll('.flip-cards__card').forEach((card) => {
         const inner = card.querySelector('.flip-cards__inner');
+        const front = card.querySelector('.flip-cards__front');
+        const back = card.querySelector('.flip-cards__back');
         card.querySelectorAll('.btn').forEach((btn) => {
             btn.addEventListener('click', () => {
-                inner.classList.toggle('is-flipped');
+                const isFlipped = inner.classList.toggle('is-flipped');
+                front.toggleAttribute('inert', isFlipped);
+                back.toggleAttribute('inert', !isFlipped);
             });
         });
     });

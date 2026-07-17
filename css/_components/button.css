@@ -38,10 +38,19 @@
     box-shadow: var(--shadow-accent);
 }
 
+.btn:hover {
+    opacity: 0.85;
+}
+
 .btn:disabled,
 .btn[disabled] {
     background-color: var(--disabled);
     color: var(--disabled-foreground);
     box-shadow: none;
     cursor: not-allowed;
+}
+
+.btn:disabled:hover,
+.btn[disabled]:hover {
+    opacity: 1;
 }
