@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+    <symbol id="icon-chevron-left" viewBox="0 0 5 8" fill="none">
+        <path d="M4 1L1 4L4 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-chevron-right" viewBox="0 0 5 8" fill="none">
+        <path d="M1 1L4 4L1 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-chevron-down" viewBox="0 0 12 8" fill="none">
+        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-play" viewBox="0 0 14 18" fill="none">
+        <path d="M1 1L13 9L1 17V1Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-pause" viewBox="0 0 14 18" fill="none">
+        <rect x="1" y="1" width="4" height="16" rx="1" fill="currentColor"/>
+        <rect x="9" y="1" width="4" height="16" rx="1" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-volume" viewBox="0 0 16 15" fill="none">
+        <path d="M7 1L3 5H1C0.447715 5 0 5.44772 0 6V9C0 9.55228 0.447715 10 1 10H3L7 14V1Z" fill="currentColor"/>
+        <path d="M10 4.5C10.9 5.4 11.5 6.65 11.5 8C11.5 9.35 10.9 10.6 10 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-settings" viewBox="0 0 17 17" fill="none">
+        <path d="M8.5 10.5C9.60457 10.5 10.5 9.60457 10.5 8.5C10.5 7.39543 9.60457 6.5 8.5 6.5C7.39543 6.5 6.5 7.39543 6.5 8.5C6.5 9.60457 7.39543 10.5 8.5 10.5Z" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M14 8.5C14 8.18 13.97 7.87 13.92 7.57L15.5 6.23L13.5 2.77L11.62 3.5C11.13 3.13 10.58 2.83 10 2.62L9.65 0.5H6.35L6 2.62C5.42 2.83 4.87 3.13 4.38 3.5L2.5 2.77L0.5 6.23L2.08 7.57C2.03 7.87 2 8.18 2 8.5C2 8.82 2.03 9.13 2.08 9.43L0.5 10.77L2.5 14.23L4.38 13.5C4.87 13.87 5.42 14.17 6 14.38L6.35 16.5H9.65L10 14.38C10.58 14.17 11.13 13.87 11.62 13.5L13.5 14.23L15.5 10.77L13.92 9.43C13.97 9.13 14 8.82 14 8.5Z" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+
+    <symbol id="icon-close" viewBox="0 0 10 10" fill="none">
+        <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-check" viewBox="0 0 11 8" fill="none">
+        <path d="M1 4L4 7L10 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+</svg>

@@ -4,6 +4,7 @@ import { initFlipCards } from './_components/flip-cards.js';
 import { initAudioPlayer } from './_components/audio-player.js';
 import { initDiscursiveActivity } from './_components/discursive-activity.js';
 import { initObjectiveActivity } from './_components/objective-activity.js';
+import { initFaq } from './_components/faq.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initPlayer();
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initAudioPlayer();
     initDiscursiveActivity();
     initObjectiveActivity();
+    initFaq();
 });
