@@ -11,6 +11,9 @@ importers:
       plyr:
         specifier: ^3.8.4
         version: 3.8.4
+      swiper:
+        specifier: ^14.0.5
+        version: 14.0.5
 
 packages:
 
@@ -28,6 +31,10 @@ packages:
 
   rangetouch@2.0.1:
     resolution: {integrity: sha512-sln+pNSc8NGaHoLzwNBssFSf/rSYkqeBXzX1AtJlkJiUaVSJSbRAWJk+4omsXkN+EJalzkZhWQ3th1m0FpR5xA==}
+
+  swiper@14.0.5:
+    resolution: {integrity: sha512-SMSKS0sj+lPIFzngfIKb5cyBtzmAuJw7rXgXdyYiDReb+pSpJXuNljHYgT4DXa5Stnl2Ew2/Lam5ipv4PIqZ7A==}
+    engines: {node: '>= 4.7.0'}
 
   url-polyfill@1.1.14:
     resolution: {integrity: sha512-p4f3TTAG6ADVF3mwbXw7hGw+QJyw5CnNGvYh5fCuQQZIiuKUswqcznyV3pGDP9j0TSmC4UvRKm8kl1QsX1diiQ==}
@@ -49,5 +56,7 @@ snapshots:
       url-polyfill: 1.1.14
 
   rangetouch@2.0.1: {}
+
+  swiper@14.0.5: {}
 
   url-polyfill@1.1.14: {}

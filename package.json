@@ -1,5 +1,6 @@
 {
 	"dependencies": {
-		"plyr": "^3.8.4"
+		"plyr": "^3.8.4",
+		"swiper": "^14.0.5"
 	}
 }

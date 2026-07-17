@@ -14,10 +14,16 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper.min.css"
+        />
         <script type="importmap">
             {
                 "imports": {
-                    "plyr": "https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.mjs"
+                    "plyr": "https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.mjs",
+                    "swiper": "https://cdn.jsdelivr.net/npm/swiper@11/swiper.min.mjs",
+                    "swiper/modules": "https://cdn.jsdelivr.net/npm/swiper@11/modules/index.mjs"
                 }
             }
         </script>
@@ -149,6 +155,51 @@
                             architecto, hic dolorum ab.
                         </p>
                     </div>
+                </div>
+            </section>
+            <section class="slider">
+                <div class="slider__card">
+                <div class="swiper js-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                src="assets/images/nature-wallpaper-slider-01.webp"
+                                alt=""
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="assets/images/nature-wallpaper-slider-02.webp"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="assets/images/nature-wallpaper-slider-03.webp"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__nav">
+                    <button class="slider__btn slider__btn--prev" aria-label="Slide anterior">
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" aria-hidden="true">
+                            <path d="M4 1L1 4L4 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="slider__pagination"></div>
+                    <button class="slider__btn slider__btn--next" aria-label="Próximo slide">
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" aria-hidden="true">
+                            <path d="M1 1L4 4L1 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                </div>
                 </div>
             </section>
         </main>
